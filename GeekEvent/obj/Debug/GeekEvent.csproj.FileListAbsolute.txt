@@ -77,9 +77,5 @@ D:\work\development\GeekEvent\GeekEvent\bin\Microsoft.Owin.Security.OAuth.xml
 D:\work\development\GeekEvent\GeekEvent\bin\Microsoft.Owin.Security.Google.xml
 D:\work\development\GeekEvent\GeekEvent\bin\Microsoft.Owin.Security.Twitter.xml
 D:\work\development\GeekEvent\GeekEvent\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.csprojResolveAssemblyReference.cache
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.dll
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.pdb
-D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.InitialCreate.resources
-D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.csproj.GenerateResource.Cache
-D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.InitialModel.resources
