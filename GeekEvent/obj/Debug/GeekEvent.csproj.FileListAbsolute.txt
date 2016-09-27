@@ -82,3 +82,4 @@ D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.dll
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.pdb
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.InitialCreate.resources
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.csproj.GenerateResource.Cache
+D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.InitialModel.resources
