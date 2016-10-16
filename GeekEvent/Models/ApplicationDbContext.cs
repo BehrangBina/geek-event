@@ -9,6 +9,7 @@ namespace GeekEvent.Models
         public DbSet<Gig> Gigs { get; set; }
         //2 - we wanna query genre so we add it
         public DbSet<Genre> Genres { get; set; }
+        
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

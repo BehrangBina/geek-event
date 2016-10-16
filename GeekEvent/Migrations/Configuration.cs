@@ -9,7 +9,7 @@ namespace GeekEvent.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(GeekEvent.Models.ApplicationDbContext context)

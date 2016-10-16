@@ -201,6 +201,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609271227036_OverideConvensionsForGigsAndGenre.cs" />
+    <Compile Include="Migrations\201609271227036_OverideConvensionsForGigsAndGenre.Designer.cs">
+      <DependentUpon>201609271227036_OverideConvensionsForGigsAndGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609271313037_InsertSampleGenre.cs" />
+    <Compile Include="Migrations\201609271313037_InsertSampleGenre.Designer.cs">
+      <DependentUpon>201609271313037_InsertSampleGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -289,6 +297,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201609271227036_OverideConvensionsForGigsAndGenre.resx">
+      <DependentUpon>201609271227036_OverideConvensionsForGigsAndGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609271313037_InsertSampleGenre.resx">
+      <DependentUpon>201609271313037_InsertSampleGenre.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
