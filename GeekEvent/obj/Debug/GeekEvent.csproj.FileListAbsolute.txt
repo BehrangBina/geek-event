@@ -83,3 +83,4 @@ D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.csprojResolveAssembl
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.OverideConvensionsForGigsAndGenre.resources
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.csproj.GenerateResource.Cache
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.InsertSampleGenre.resources
+D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.OverRideconvensionsForGigAndGenre.resources
