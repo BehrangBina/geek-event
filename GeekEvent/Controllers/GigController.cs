@@ -1,5 +1,6 @@
 ﻿using GeekEvent.Models;
 using GeekEvent.ViewModel;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,28 @@ namespace GeekEvent.Controllers
                 Genres = _context.Genres.ToList()
             };
             return View(viewModel);
+        }
+        [Authorize]
+        [HttpPost]
+        public ActionResult Create(GigFormViewModel gigForm)
+        {
+            // to resolve INQ to Entities does not recognize 
+            var artistId = User.Identity.GetUserId();
+            // declared and replace 
+            var artist = _context.Users.Single(u => u.Id == artistId);
+            var genre =  _context.Genres.Single(g => g.Id == gigForm.Genre);
+            var gig = new Gig
+            {
+                Artist = artist,
+                DateTime = DateTime.Parse(
+                    string.Format("{0} {1}", gigForm.Date, gigForm.Time)),
+                Genre = genre,
+                Venue = gigForm.Venue              
+
+            };
+            _context.Gigs.Add(gig);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
