@@ -39,8 +39,8 @@ namespace GeekEvent.Controllers
             var gig = new Gig
             {
                 Artist = artist,
-                DateTime = DateTime.Parse(
-                    string.Format("{0} {1}", gigForm.Date, gigForm.Time)),
+                DateTime = gigForm.DateTime,
+
                 Genre = genre,
                 Venue = gigForm.Venue              
 
