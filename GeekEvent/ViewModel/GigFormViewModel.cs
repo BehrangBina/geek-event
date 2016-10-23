@@ -15,6 +15,7 @@ namespace GeekEvent.ViewModel
         [FutureDate]
         public string Date  { get; set; }
         [Required]
+        [FutureTime]
         public string Time { get; set; }
         [Required]
         public int Genre { get; set; }

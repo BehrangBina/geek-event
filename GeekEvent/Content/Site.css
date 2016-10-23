@@ -22,3 +22,11 @@ select,
 textarea {
     max-width: 280px;
 }
+/*Geek event */
+.navbar-inverse {
+    background-color: #420101;
+    color: orangered;
+    font-size: 14px;
+}
+
+ 
