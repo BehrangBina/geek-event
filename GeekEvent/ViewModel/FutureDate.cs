@@ -14,8 +14,8 @@ namespace GeekEvent.ViewModel
             DateTime dateTime;
             var isValid = DateTime.TryParseExact(
                 Convert.ToString(value),
-                "d mmm yyyy",
-                CultureInfo.CurrentCulture,
+                "dd/MM/yyyy",
+                CultureInfo.InvariantCulture,
                 DateTimeStyles.None, out dateTime
             );
 
