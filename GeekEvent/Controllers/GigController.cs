@@ -29,6 +29,7 @@ namespace GeekEvent.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel gigForm)
         {
             if (!ModelState.IsValid)
