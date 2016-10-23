@@ -31,6 +31,16 @@ namespace GeekEvent.Controllers
         [HttpPost]
         public ActionResult Create(GigFormViewModel gigForm)
         {
+            if (!ModelState.IsValid)
+            {
+                /*
+                 * To avoid [ArgumentNullException: Value cannot be null] 
+                 * for Genre
+                 */
+                gigForm.Genres = _context.Genres.ToList();
+                
+                return View("Create", gigForm);
+            }
             // to resolve INQ to Entities does not recognize 
             var artistId = User.Identity.GetUserId();
             // declared and replace 
@@ -39,7 +49,7 @@ namespace GeekEvent.Controllers
             var gig = new Gig
             {
                 Artist = artist,
-                DateTime = gigForm.DateTime,
+                DateTime = gigForm.GetDateTime(),
 
                 Genre = genre,
                 Venue = gigForm.Venue              

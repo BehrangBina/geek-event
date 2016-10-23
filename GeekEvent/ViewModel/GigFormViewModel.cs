@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,16 +8,21 @@ namespace GeekEvent.ViewModel
 {
     public class GigFormViewModel
     {
-        //Helper Cless combines seperated date time to one field
+        //Helper Class combines seperated date time to one field
+        [Required]
         public string Venue { get; set; }
+        [Required]
         public string Date  { get; set; }
+        [Required]
         public string Time { get; set; }
+        [Required]
         public int Genre { get; set; }
         public IEnumerable<Models.Genre> Genres { get; set; }
 
-        public DateTime DateTime
+        public DateTime GetDateTime()
         {
-            get{return DateTime.Parse(string.Format("{0} {1}", Date, Time));}
+            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
+
         }
     }
 
