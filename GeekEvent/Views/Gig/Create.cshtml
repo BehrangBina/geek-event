@@ -4,25 +4,25 @@
 }
 
 <h2>Create</h2>
-<hr/>
-<br/>
+<hr />
+<br />
 
 @using (Html.BeginForm("Create", "Gig"))
 {
     @Html.AntiForgeryToken()
     <div class="form-group">
         @Html.LabelFor(m => m.Venue)
-        @Html.TextBoxFor(m => m.Venue, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m=>m.Venue)
+        @Html.TextBoxFor(m => m.Venue, new { @class = "form-control" ,placeholder="Venu" })
+        @Html.ValidationMessageFor(m => m.Venue)
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Date)
-        @Html.TextBoxFor(m => m.Date, new { @class = "form-control" })
+        @Html.TextBoxFor(m => m.Date, new { @class = "form-control" , placeholder= DateTime.Now.ToString("dd/MM/yyyy") })
         @Html.ValidationMessageFor(m => m.Date)
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Time)
-        @Html.TextBoxFor(m => m.Time, new { @class = "form-control" })
+        @Html.TextBoxFor(m => m.Time, new { @class = "form-control" , placeholder=DateTime.Now.ToString("HH:MM") })
         @Html.ValidationMessageFor(m => m.Time)
     </div>
 
@@ -33,6 +33,8 @@
     </div>
     <button type="submit" class="btn btn-primary">Save</button>
 }
+
 @section scripts{
     @Scripts.Render("~/bundles/jqueryval")
+
 }
