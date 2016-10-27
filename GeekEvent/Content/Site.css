@@ -82,23 +82,60 @@ label {
     font-size: 17px;
     width: 130px;
 }
-.btn-primary:after .btn-primary:focus {
-     background-color: darkred;
-}
+
+    .btn-primary:after .btn-primary:focus {
+        background-color: darkred;
+    }
+
     .btn-primary:hover {
         background-color: darkred;
         color: whitesmoke;
     }
-.btn-primary:active:hover {
-      background-color: darkred;
+
+    .btn-primary:active:hover {
+        background-color: darkred;
         color: whitesmoke;
- }
+    }
 /*input[type="text"][data-val-required] { color: red; }*/
 span.field-validation-error {
-     color: orangered;
-  
+    color: orangered;
 }
+
 .form-control:focus {
     border: 3px solid red;
 }
- 
+
+#gigs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    #gigs li {
+        /*list-style-image: url('../img/gig-icon.png');*/
+        background: url('../img/gig-icon.png') no-repeat left top;
+        height: 15px;
+        padding-left: 22px;
+        margin-top: 10px;
+        color: darkslateblue;
+    }
+
+.glyphicon-option-vertical {
+    margin-right: 3px;
+    margin-left: 3px;
+    color: black;
+}
+
+.gig-details {
+    width: 100%;
+}
+
+.gig-prop {
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+}
+
+.gig-details:hover {
+    background-color: lightcyan;
+}
