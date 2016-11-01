@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
@@ -139,3 +139,49 @@ span.field-validation-error {
 .gig-details:hover {
     background-color: lightcyan;
 }
+
+#gig-calandar {
+    list-style: none;
+    background-color: lightgoldenrodyellow;
+}
+
+    #gig-calandar > li {
+        /*First li after ul*/
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        #gig-calandar > li .details {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+        }
+
+            #gig-calandar > li .details .genre {
+                position: absolute;
+                top: 0px;
+                left: 70px;
+                font-size: 5px;
+            }
+
+        #gig-calandar > li .date {
+            color: rgb(255, 255, 255);
+            background-color: red;
+            -ms-border-radius: 8px;
+            border-radius: 8px;
+            color: #ffffff;
+            width: 60px;
+            text-align: center;
+        }
+
+        #gig-calandar > li .day {
+            background-color: white;
+            color: black;
+        }
+
+        #gig-calandar > li .month {
+            padding: 2px 4px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }

@@ -45,14 +45,13 @@
     </div>
     <div class="col-md-6">
         <h2>Gig Calandar View</h2>
-        <ul id="gigs">
-
+        <ul id="gig-calandar">
             @foreach (var gig in Model)
             {
                 <li>
                     <div class="date">
                         <div class="month">@gig.DateTime.ToString("MMM")</div>
-                        <div class="day">>@gig.DateTime.ToString("d ")</div>
+                        <div class="day">12</div>
                     </div>
                     <div class="details">
                         <span class="artist">@gig.Artist.Name</span>
