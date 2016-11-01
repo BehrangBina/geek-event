@@ -85,3 +85,4 @@ D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.csproj.GenerateResou
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.InsertSampleGenre.resources
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.OverRideconvensionsForGigAndGenre.resources
 D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.addName.resources
+D:\work\development\GeekEvent\GeekEvent\obj\Debug\GeekEvent.Migrations.addAttendee.resources
