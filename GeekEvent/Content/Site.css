@@ -142,13 +142,13 @@ span.field-validation-error {
 
 #gig-calandar {
     list-style: none;
-    background-color: lightgoldenrodyellow;
 }
 
     #gig-calandar > li {
+        padding-bottom: 30px;
         /*First li after ul*/
         position: relative;
-        margin-bottom: 30px;
+        padding-bottom: 15px;
     }
 
         #gig-calandar > li .details {
@@ -158,10 +158,20 @@ span.field-validation-error {
         }
 
             #gig-calandar > li .details .genre {
+                font-size: 15px;
                 position: absolute;
                 top: 0px;
                 left: 70px;
-                font-size: 5px;
+                font-size: 15px;
+            }
+
+            #gig-calandar > li .details .venu {
+                top: -10px;
+                width: 100%;
+                font-size: 15px;
+                position: absolute;
+                left: 130px;
+                top: 0px;
             }
 
         #gig-calandar > li .date {
@@ -175,7 +185,7 @@ span.field-validation-error {
         }
 
         #gig-calandar > li .day {
-            background-color: white;
+            background-color: #EEEEEE;
             color: black;
         }
 
