@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using System.Web.ModelBinding;
 using GeekEvent.Models;
 using Microsoft.AspNet.Identity;
 
@@ -13,8 +14,8 @@ namespace GeekEvent.Controllers
         {
             _Context=new ApplicationDbContext();
         }
-      
-        public  IHttpActionResult Attend(int gigId)
+       [HttpPost]
+        public  IHttpActionResult Attend([FromBody] int gigId)
         {
             var attendance = new Attendance
             {
